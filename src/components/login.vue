@@ -6,15 +6,18 @@
                 <p class="p1">Login Page</p>
             </dev>
             <div class="lgD">
-                <!-- 输入框 -->
+                <!-- 用户名输入框 -->
                 <input type="text" placeholder="Username">
             </div>        
             <div class="lgD">
+                <!-- 密码输入框 -->
                 <input type="password" placeholder="Password">
             </div>
             <div class="logC">
+                <!-- 提交按钮 -->
                 <a><button @click="login">Submit</button></a>
             </div>
+            
         </div>
     </div>
 </template>
@@ -32,7 +35,8 @@ export default {
 
 <style>
     body {
-        background-image: url(../assets/logo.png);
+      /* background-image: url(); */
+        background-color: rgb(78, 80, 82);
         background-size: 100%;
         background-repeat: no-repeat;
         background-position: center center;
@@ -43,38 +47,19 @@ export default {
         padding: 0;
     }
 
-    #wrap {
-        height: 120px;
-        width: 100;
-        background-position: center center;
-        position: relative;
-    }
-
-    #head {
-        height: 120px;
-        width: 100;
-        background-color: #666666;
-        text-align: center;
-        position: relative;
-    }
-
     .logC a button {
         widows: 100%;
         height: 45px;
-        background-color: aliceblue;
+        width: 100px;
+        background-color: none;
         border: none;
         color: white;
         font-size: 18px;
+        position: relative;
+        
     }
 
-    #wrap .logGet .logD.logDtip {
-        width: 86%;
-        border-bottom: 1px solid #ee7700;
-        margin-bottom: 60px;
-        margin-top: 0px;
-        margin-right: auto;
-        margin-left: auto;
-    }
+    
 
     .logGet .lgD img {
         position: absolute;
@@ -83,55 +68,20 @@ export default {
     }
 
     .logGet .lgD input {
-        width: 100%;
+        width: 220px;
         height: 42px;
+        position: relative;
         text-indent: 2.5rem;
     }
-
-    #wrap .logGet .lgD {
-        width: 86%;
-        position: relative;
-        margin-bottom: 30px;
-        margin-top: 30px;
-        margin-right: auto;
-        margin-left: auto;
+    input::-webkit-input-placeholder {
+        /* placeholder颜色  */
+         color: #aab2bd;
+        /* placeholder字体大小  */
+         font-size: 12px;
+         /* placeholder位置  */
+         text-align: left;
     }
-
-    #wrap .logGet .logC {
-        width: 86%;
-        margin-top: 0px;
-        margin-right: auto;
-        margin-bottom: 0px;
-        margin-left: auto;
-    }
-
-
-    .title {
-        font-family: "宋体";
-        color: #FFFFFF;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        /* 使用css3的transform来实现 */
-        font-size: 36px;
-        height: 40px;
-        width: 30%;
-    }
-
-    .copyright {
-        font-family: "宋体";
-        color: #FFFFFF;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        /* 使用css3的transform来实现 */
-        height: 60px;
-        width: 40%;
-        text-align: center;
-    }
-        
+    
 
 </style>
 
