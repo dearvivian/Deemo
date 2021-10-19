@@ -6,7 +6,8 @@
    <!-- 这里router-link to="newcontact"会把路由导航到http://localhost:8080/#/newcontact   -->
     <router-link to="newcontact"><h1>{{ 'TO NewContact' }}</h1></router-link>
 
-    <h2>Essential Links</h2>
+    
+    <router-link to="login"><h2>{{ 'TO login Page' }}</h2></router-link>
     
   </div>
 </template>

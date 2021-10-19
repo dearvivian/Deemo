@@ -1,15 +1,18 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
-import card from '@/components/card' //新添加
-import NweContact from '@/components/NewContact'
+import card from '@/components/card' 
+import NewContact from '@/components/NewContact'
+import login from '@/components/login'
+
+
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: '/',
+      path: '/', // 一级路由
       name: 'HelloWorld',
       component: HelloWorld
     },
@@ -21,7 +24,12 @@ export default new Router({
     {
       path: '/newcontact',
       name: 'NewContact',
-      component: NweContact
+      component: NewContact
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: login
     }
   ]
 })
