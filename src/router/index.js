@@ -4,7 +4,7 @@ import HelloWorld from '@/components/HelloWorld'
 import card from '@/components/card' 
 import NewContact from '@/components/NewContact'
 import login from '@/components/login'
-
+import Home from '@/components/Home'
 
 
 Vue.use(Router)
@@ -30,6 +30,11 @@ export default new Router({
       path: '/login',
       name: 'login',
       component: login
+    },
+    {
+      path: '/Home',
+      name: 'Home',
+      component: Home
     }
   ]
 })
