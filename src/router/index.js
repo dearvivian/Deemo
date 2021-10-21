@@ -13,8 +13,8 @@ export default new Router({
   routes: [
     {
       path: '/', // 一级路由
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'login',
+      component: login
     },
     {
       path: '/card',
